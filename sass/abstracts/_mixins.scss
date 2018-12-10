@@ -13,6 +13,7 @@
     transform: translate(-50%, -50%);
 }
 
+// Order base -> typogrpahy -> general layout +grid -> components
 
 @mixin respond($breakpoint){
     //600px;
@@ -35,7 +36,7 @@
     }
     //1800px;
     @if $breakpoint == big-desktop {
-        @media (max-width: 112.5em){
+        @media (min-width: 112.5em){
             @content 
         };
     }
